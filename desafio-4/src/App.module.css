@@ -1,0 +1,162 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 72px;
+  height: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 24px 32px;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profileImg {
+  border-radius: 48px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contantInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.contantInfo p {
+  font-weight: bold;
+  color: #E1E1E6;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.contantInfo span {
+  color: #00B37E;
+  font-size: 12px;
+}
+
+.contantInfo span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contantInfo span::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #00B37E;
+  border-radius: 8px;
+  margin-right: 4px;
+}
+
+.closeButton {
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+  margin: auto 0;
+}
+
+.chat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.messages {
+  flex: 1;
+  padding-top: 14px;
+  position: relative;
+}
+
+.messages > span {
+  font-size: 12px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sendChat, .receivedChat {
+  /* align-self: start;   */
+  max-width: 90%;
+  width: fit-content;
+  /* word-wrap: break-word; */
+  display: block;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receivedChat > div, .sendChat > div {
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.receivedChat > div {
+  background-color: #633BBC;
+  border-bottom-left-radius: 0;
+}
+
+.sendChat > div {
+  background-color: #07847E;
+  border-bottom-right-radius: 0;
+}
+
+.sendChat {
+  margin-left: auto;
+}
+.sendChat > p {
+  text-align: right;
+}
+
+.footerContainer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+}
+.footerContainer div {
+  padding: 8px;
+  border-radius: 100%;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footerContainer input {
+  width: 100%;
+  border: none;
+  border-radius: 26px;
+  padding: 20px 24px;
+  /* font-size: 12px; */
+  font-family: 'Roboto';
+  background-color: #282843;
+  color: #E1E1E6;
+  font-weight: 400;
+}
+
+.footerContainer div:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
