@@ -1,0 +1,104 @@
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #807ECE 0%, #8E7ECE 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  /* border: 1px solid red; */
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+#app {
+  padding: 3.375rem 2rem 2rem 2rem;
+  border-radius: 3rem;
+  background-color: #2D2A37;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 188px 52px rgba(0, 0, 0, 0.01), 0px 120px 48px rgba(0, 0, 0, 0.04), 0px 68px 41px rgba(0, 0, 0, 0.15), 0px 30px 30px rgba(0, 0, 0, 0.26), 0px 8px 17px rgba(0, 0, 0, 0.29), inset 0px 6px 8px rgba(255, 255, 255, 0.1), inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 0.75rem;
+}
+
+.purple-button {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878 !important;
+}
+
+.purple-light-button {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2 !important;
+}
+
+.purple-color {
+  color: #975DFA !important;
+}
+
+.keyboard button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  border: none;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+  color: #EBEBEB;
+
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 1.50rem;
+}
+
+.keyboard button:hover {
+  cursor: pointer;
+}
+
+#display {
+  padding: 0 1.375rem;
+}
+
+.expression {
+  font-size: 1.25rem;
+  height: 1.75rem;
+  width: 100%;
+  color: #6B6B6B;
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  color: #EBEBEB;
+  text-align: right;
+  margin-bottom: 1.625rem;
+}
+
+.value {
+  width: 100%;
+  overflow: scroll;
+}
+
+.equals-icon {
+  color: #6B6B6B;
+}
